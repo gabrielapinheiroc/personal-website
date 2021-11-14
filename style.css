@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    background-color: gray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{ 
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 0;
+    background:black;
+    color: white ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+header ul {
+    list-style: none;
+    display: flex;
+}
+header li {
+    margin: 0 15px;
+}
+
+header{
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('assets/header-image.png');
+    color: black;
+    font-weight: bold;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+header nav p{
+    font-weight: bold;
+}
+
+.header-content{
+    max-width: 400px;
+    margin: 150px center;
+    margin: 30px;
+    font-size: 1rem;
+}
+
+.about {
+    background: rgb(213, 187, 252);
+    padding: 15px;
+}
+
+.about .about-cards{
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-self: center;
+}
+.about .about-title{
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+.about .education-cards p{
+    color: black;
+    margin: 100px 100px;
+    text-align: center;
+
+}
+.education {
+    background: rgb(233, 231, 236);
+    padding: 15px;
+}
+
+.education .education-cards{
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-self: center;
+}
+
+.education .education-title{
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.education .card {
+    width: 250px;
+    height: 350px;
+    background: white;
+    border-radius: 24px 0px;
+    margin: 25px ;
+}
+
+.education .card-image{
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+}
+
+.education .card-content{
+    padding: 0 15px;
+}
+.education .card-content ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    color: gray;
+}
+
+.education .card-content li{
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.education .card-content li svg{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.education .card-content h1 {
+    font-size: 1rem;
+}
+
+.redes{
+    padding: 15px;
+    background-color: white;
+}
+
+.redes .redes-title{
+    text-align: center;
+    margin: 35px 0;
+}
+
+.redes .redes-cards{
+    margin-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin:auto;
+    flex-wrap: wrap;
+
+}
+.redes .card{
+    width: 250px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.redes .card svg{
+    width: 60px;
+    height: 60px;
+    margin: 30px;
+    transition: all 1s;
+    
+}
+.redes .card svg:hover{
+    stroke: #CB6CE6;
+    transform: scale(1.1);
+}
+
+.redes .card .card-content{
+    height: 120px;
+    text-align: center;
+
+}
+.redes .card h3{
+    font-weight: bold;
+}
+.redes .card {
+    font-size: .8rem;
+    text-align: center;
+}
+
+/* Responsividade*/
+@media (max-width: 767px){
+    
+}
+@media (max-width: 480px){
+        body{
+        margin-bottom: 55px;
+        }
+
+        header{
+            height: calc(100vh - 150px);
+            background: no-repeat center/cover url('assets/header-image-2.png');
+            color: black;
+            font-weight: bold;
+        }
+    
+        header nav ul{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+
+            z-index: 99;
+
+            background:#CB6CE6;
+            color: black;
+            font-weight: bold;
+            height: 55px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            flex-wrap: wrap;
+        }
+        header nav p{
+            width: 100%;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .about .education-cards p{
+            color: black;
+            margin: 30px 30px;
+            text-align: center;
+        }
+    }
+@media (max-width: 380px){
+    .about .education-cards p{
+        color: black;
+        margin: 30px 30px;
+        text-align: center;
+    }
+    header nav ul{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
